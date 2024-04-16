@@ -16,3 +16,18 @@ saludo.slice(0,5); //corta el string y devuelve una parte del string donde se ap
 saludo.trim();//elimina los espacios del principio y del final del string
 saludo.replace('todos', 'sandra'); //reemplaza una parte del string por otra "muy buenos dias a sandra"
 saludo.split(' '); //divide un string en partes
+
+let frutas = ['manzana', 'uva', 'pera'];
+frutas.splice(1, 1, 'limon'); //permite cambiar el contenido del arreglo eliminando o sustituyendo los elementos existentes por otros nuevos.
+
+let numeros = [2, 5, 8, 6, 10, 1, 30];
+let numerosSumados = numeros.reduce((suma, number) => (
+    suma + number*2
+), 0);
+
+let numberMin = numeros.reduce((min, number) => (
+    number < min ? number : min
+), numeros[0])
+
+console.log(numberMin);
+
